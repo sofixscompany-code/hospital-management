@@ -1,0 +1,33 @@
+{
+  "orders": [
+    {
+      "id": "1",
+      "table_number": 12,
+      "status": "pending",
+      "items": [
+        {
+          "id": "1",
+          "name": "Pizza",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Coke",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "table_number": 8,
+      "status": "pending",
+      "items": [
+        {
+          "id": "3",
+          "name": "Burger",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
