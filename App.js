@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NavigationContainer } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import "react-native-gesture-handler";
@@ -28,3 +29,25 @@ export default function App() {
     </GestureHandlerRootView>
   );
 }
+=======
+
+import React from 'react';
+import { AuthProvider } from './context/AuthContext';
+import { CartProvider } from './context/CartContext';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './navigation/RootNavigator';
+
+const App = () => {
+  return (
+    <AuthProvider>
+      <CartProvider>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
+      </CartProvider>
+    </AuthProvider>
+  );
+};
+
+export default App;
+>>>>>>> ad4022e44602687d7281cc64d15c232c9df781b1
