@@ -1,5 +1,4 @@
 import { MaterialIcons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { Card } from "react-native-paper";

@@ -21,7 +21,6 @@ export default function QRScannerScreen() {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-<<<<<<< HEAD
     if (data.startsWith("TABLE_")) {
       const tableNumber = data.split("_")[1];
       setTableNumber(tableNumber);
@@ -36,21 +35,12 @@ export default function QRScannerScreen() {
 
   if (hasPermission === null) {
     return <Text>Requesting camera permission</Text>;
-=======
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
-    navigation.navigate('Menu');
-  };
-
-  if (hasPermission === null) {
-    return <Text>Requesting for camera permission</Text>;
->>>>>>> ad4022e44602687d7281cc64d15c232c9df781b1
   }
   if (hasPermission === false) {
     return <Text>No access to camera</Text>;
   }
 
   return (
-<<<<<<< HEAD
     <View style={globalStyles.container}>
       <Text style={styles.title}>Scan Table QR Code</Text>
       <Camera
@@ -109,26 +99,3 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
-=======
-    <View style={styles.container}>
-      <BarCodeScanner
-        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        style={StyleSheet.absoluteFillObject}
-      />
-      {scanned && (
-        <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />
-      )}
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-  },
-});
-
-export default QRScannerScreen;
->>>>>>> ad4022e44602687d7281cc64d15c232c9df781b1

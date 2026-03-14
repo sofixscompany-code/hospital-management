@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useNavigation } from "@react-navigation/native";
 import { useContext, useEffect, useState } from "react";
 import {
@@ -201,34 +200,3 @@ const styles = StyleSheet.create({
     color: colors.primary,
   },
 });
-=======
-
-import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
-
-const HomeScreen = ({ navigation }) => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Smart Hospitality</Text>
-      <Button
-        title="Scan QR Code"
-        onPress={() => navigation.navigate('QRScanner')}
-      />
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-  },
-});
-
-export default HomeScreen;
->>>>>>> ad4022e44602687d7281cc64d15c232c9df781b1
