@@ -33,12 +33,12 @@
       enable = true;
       previews = {
         web = {
-          command = [ "npm" "run" "web" "--" "--port" "$PORT" ];
+          command = [ "npm", "run", "web", "--", "--host", "0.0.0.0", "--port", "$PORT", "--tunnel" ];
           manager = "web";
         };
         android = {
           # noop
-          command = [ "tail" "-f" "/dev/null" ];
+          command = [ "tail", "-f", "/dev/null" ];
           manager = "web";
         };
       };
